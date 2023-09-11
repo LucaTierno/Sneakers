@@ -30,7 +30,7 @@ const pintarCarrito = () => {
         `;
 
         modal.append(carritoContent);
-
+ 
         let eliminar = document.createElement("button");
         eliminar.innerHTML = '<i class="bi bi-trash3"></i>';
         eliminar.className = "eliminar";
@@ -54,5 +54,11 @@ verCarrito.addEventListener("click", pintarCarrito);
 
 const eliminarProducto = (productId) => {
     carrito = carrito.filter((producto) => producto.id !== productId);
+    carritoCounter();
     pintarCarrito();
 };
+
+const carritoCounter = () => {
+    cantidadCarrito.style.display = "block";
+    cantidadCarrito.innerText = carrito.length;
+}

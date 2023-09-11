@@ -2,6 +2,7 @@ const containerProductos = document.querySelector(".container-productos");
 const verCarrito = document.querySelector(".ver-carrito")
 const modalHeaderButton = document.querySelector(".modal-header-button");
 const modal = document.getElementById("modal");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 productos.forEach(producto => {
     const div = document.createElement("div");
@@ -26,5 +27,6 @@ productos.forEach(producto => {
             imagen: producto.imagen
         });
         console.log(carrito);
+        carritoCounter();
     });
 });

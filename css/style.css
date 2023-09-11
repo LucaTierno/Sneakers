@@ -19,8 +19,25 @@ img{
 
 /* ------------------------------------- */
 
+.cantidad-carrito{
+    display: none;
+    background-color: red;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    top: 36px;
+    left: 450px;
+}
+
+.ver-carrito {
+    font-size: 1.4rem;
+}
+
+/* --------------- PRODUCTOS ------------- */
 .section-productos{
-    padding-top: 2rem;
+    padding-top: 8.5rem;
 }
 
 .section-productos-titulo{
@@ -72,7 +89,9 @@ img{
     background-color: #f7f7f7;
 }
 
-/* Modal */
+/* --------------------------------------- */
+
+/* -------- Modal ----------*/
 
 .modal{
     width: 60%;
@@ -151,8 +170,10 @@ img{
     margin: auto;
 }
 
+/* -------------------------------- */
 
 
+/* -------- MEDIA QUERIES ------------- */
 
 @media (max-width: 1380px) {
     .container-productos{
@@ -163,6 +184,13 @@ img{
 @media (max-width: 1076px) {
     .container-productos{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .cantidad-carrito{
+        top: 237px;
+        left: 58px;
     }
 } 
 
