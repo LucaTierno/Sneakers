@@ -1,4 +1,4 @@
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("Carrito")) || [];
 
 const pintarCarrito = () => {
 
@@ -55,10 +55,17 @@ verCarrito.addEventListener("click", pintarCarrito);
 const eliminarProducto = (productId) => {
     carrito = carrito.filter((producto) => producto.id !== productId);
     carritoCounter();
+    saveLocal();
     pintarCarrito();
 };
 
 const carritoCounter = () => {
     cantidadCarrito.style.display = "block";
-    cantidadCarrito.innerText = carrito.length;
+
+    const carritoLength = carrito.length;
+    localStorage.setItem("CarritoLength", JSON.stringify(carritoLength));
+
+    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("CarritoLength"));
 }
+
+carritoCounter();
