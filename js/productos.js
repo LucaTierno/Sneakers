@@ -1,16 +1,5 @@
 const productos = [
     {
-        id: 1,
-        nombre: "Nike Air Force 1 '07",
-        precio: 120,
-        descripcion: "Zapatillas de Moda para Mujer",
-        categoria: {
-            nombre: "Air Force",
-            id: "Air Force"
-        },
-        imagen: "./assets/img/air-force/nike-air-force-1-'07-lv8.webp"
-    },
-    {
         id: 2,
         nombre: "Nike Air Force 1 '07",
         precio: 110,
@@ -42,6 +31,17 @@ const productos = [
             id: "Air Max"
         },
         imagen: "./assets/img/air-max/nike-air-max-95.webp"
+    },
+    {
+        id: 1,
+        nombre: "Nike Air Force 1 '07",
+        precio: 120,
+        descripcion: "Zapatillas de Moda para Mujer",
+        categoria: {
+            nombre: "Air Force",
+            id: "Air Force"
+        },
+        imagen: "./assets/img/air-force/nike-air-force-1-'07-lv8.webp"
     },
     {
         id: 5,
@@ -141,17 +141,6 @@ const productos = [
             id: "Air Force"
         },
         imagen: "./assets/img/air-force/nike-air-force-1-'07-lx.webp"
-    },
-    {
-        id: 14,
-        nombre: "Nike Air Force 1 '07",
-        precio: 120,
-        descripcion: "Zapatillas de Moda para Hombre",
-        categoria: {
-            nombre: "Air Force",
-            id: "Air Force"
-        },
-        imagen: "./assets/img/air-force/nike-air-force-1-'07-se.webp"
     },
     {
         id: 15,
