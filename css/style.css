@@ -164,10 +164,25 @@ img{
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .totalContentTexto{
-    margin: auto;
+    margin: auto 0;
+}
+
+.totalContentComprar{
+    margin: 0;
+    padding: 7px 10px;
+    background-color: rgb(32, 156, 32);;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+}
+
+.totalContentComprar:hover{
+    background-color: rgb(29, 129, 29);;
 }
 
 /* -------------------------------- */

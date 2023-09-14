@@ -8,6 +8,7 @@ const airJordan = document.getElementById("airJordan");
 const airMax = document.getElementById("airMax");
 const airTodos = document.getElementById("airTodos");
 const sectionProductosTitulo = document.getElementById("sectionProductosTitulo");
+const modalContent = document.getElementsByClassName(".modalContent");
 
 const todosLosProductos = () => {
     sectionProductosTitulo.innerText = "Todos los productos"

@@ -44,9 +44,21 @@ const pintarCarrito = () => {
 
     const totalBuying = document.createElement("div");
     totalBuying.className = "totalContent"
-    totalBuying.innerHTML = `<p class="totalContentTexto">Total a pagar: $${total}</p>`
-
+    totalBuying.innerHTML = `
+        <p class="totalContentTexto">Total a pagar: $${total}</p>
+        <button class="totalContentComprar" id="totalContentComprar">COMPRAR</button>
+    `
     modal.append(totalBuying);
+
+    const totalContentComprar = document.getElementById("totalContentComprar");
+
+    totalContentComprar.addEventListener("click", () => {
+        console.log("funcionando");
+        carrito = [];
+        carritoCounter();
+        saveLocal();
+        pintarCarrito();
+    })
 
 };
 
