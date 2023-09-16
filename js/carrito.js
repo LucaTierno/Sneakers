@@ -53,11 +53,22 @@ const pintarCarrito = () => {
     const totalContentComprar = document.getElementById("totalContentComprar");
 
     totalContentComprar.addEventListener("click", () => {
-        console.log("funcionando");
-        carrito = [];
-        carritoCounter();
-        saveLocal();
-        pintarCarrito();
+        if (carrito.length != 0) {
+            carrito = [];
+            carritoCounter();
+            saveLocal();
+            Swal.fire(
+                'Gracias por comprar en Sneakers',
+                'Te enviaremos un mail con los detalles de tu pedido.',
+                'success'
+            )
+            pintarCarrito();
+        } else {
+            Swal.fire(
+                'El carrito está vacío',
+                'Seguir viendo productos.',
+            )
+        }
     })
 
 };
