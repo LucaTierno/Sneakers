@@ -53,7 +53,7 @@ const modeloAirForce = () => {
     containerProductos.innerHTML = "";
 
     productos.forEach(producto => {
-        if (producto.categoria.id === "Air Force"){
+        if (producto.categoria === "Air Force"){
             const div = document.createElement("div");
             div.className = "producto";
             div.innerHTML = `
@@ -90,7 +90,7 @@ const modeloAirJordan = () => {
     containerProductos.innerHTML = "";
 
     productos.forEach(producto => {
-        if (producto.categoria.id === "Air Jordan"){
+        if (producto.categoria === "Air Jordan"){
             const div = document.createElement("div");
             div.className = "producto";
             div.innerHTML = `
@@ -127,7 +127,7 @@ const modeloAirMax = () => {
     containerProductos.innerHTML = "";
 
     productos.forEach(producto => {
-        if (producto.categoria.id === "Air Max"){
+        if (producto.categoria === "Air Max"){
             const div = document.createElement("div");
             div.className = "producto";
             div.innerHTML = `
