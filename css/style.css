@@ -9,15 +9,13 @@
 
 :root {
     --clr-white: #f5d7db;
-    --clr-main: #1b3358;
+    --clr-main: #02c8eb;
     --clr-main2: #06142e;
 }
 
 img{
     width: 100%;
 }
-
-/* ------------------------------------- */
 
 .cantidad-carrito{
     display: none;
@@ -35,13 +33,25 @@ img{
     font-size: 1.4rem;
 }
 
+/* --------------- NAVBAR ------------- */
+
+.navbar-titulo{
+    color: var(--clr-main);
+}
+
+.nav-link:hover{
+    color: var(--clr-main);
+}
+
 /* --------------- PRODUCTOS ------------- */
+
 .section-productos{
     padding-top: 8.5rem;
 }
 
 .section-productos-titulo{
     text-align: center;
+    color: var(--clr-main2);
 }
 
 .container-productos{
@@ -89,9 +99,7 @@ img{
     background-color: #f7f7f7;
 }
 
-/* --------------------------------------- */
-
-/* -------- Modal ----------*/
+/* -------- MODAL ----------*/
 
 .modal{
     width: 60%;
@@ -118,7 +126,7 @@ img{
 .modalHeader {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(37, 37, 37);
     color: #fff;
     width: 100%;
     padding: 10px;
@@ -185,7 +193,58 @@ img{
     background-color: rgb(29, 129, 29);;
 }
 
-/* -------------------------------- */
+/* ------------ FOOTER -------------*/
+
+footer{
+    padding: 5rem 0 1rem;
+}
+
+.footer-subtitle{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--clr-main2);
+}
+
+.footer-texto{
+    font-size: 0.9rem;
+}
+
+.footer-texto span{
+    color: var(--clr-main);
+    font-size: 1rem;
+}
+
+.footer-contacto-link{
+    display: block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--clr-main2);
+    margin-top: 0.3rem;
+}
+
+.footer-contacto-link:hover{
+    display: block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--clr-main);
+}
+
+.footer-contacto-link i{
+    font-size: 1.3rem;
+    margin-left: rem;
+    padding-right: 0.7rem;
+    color: var(--clr-main);
+}
+
+.footer-texto-gracias{
+    color: var(--clr-main2);
+}
+
+.todos-los-derechos{
+    font-size: 0.7rem;
+}
 
 
 /* -------- MEDIA QUERIES ------------- */
@@ -206,6 +265,22 @@ img{
     .cantidad-carrito{
         top: 237px;
         left: 58px;
+    }
+
+    .footer-subtitle{
+        text-align: center;
+    }
+
+    .footer-texto{
+        text-align: center;
+    }
+
+    .footer-texto-gracias{
+        text-align: center;
+    }
+
+    .container-footer{
+        margin-bottom: 1.3rem;
     }
 } 
 
