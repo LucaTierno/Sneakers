@@ -39,6 +39,23 @@ const todosLosProductos = () => {
             console.log(carrito);
             carritoCounter();
             saveLocal();
+
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'bottom-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              
+              Toast.fire({
+                icon: 'success',
+                title: 'Producto agregado al carrito.'
+              })
         });
     });
 }
@@ -79,6 +96,23 @@ const modeloAirForce = () => {
                     console.log(carrito);
                     carritoCounter();
                     saveLocal();
+
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'bottom-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      
+                      Toast.fire({
+                        icon: 'success',
+                        title: 'Producto agregado al carrito.'
+                      })
             });
         };
     });
@@ -116,6 +150,23 @@ const modeloAirJordan = () => {
                     console.log(carrito);
                     carritoCounter();
                     saveLocal();
+
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'bottom-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      
+                      Toast.fire({
+                        icon: 'success',
+                        title: 'Producto agregado al carrito.'
+                      })
             });
         };
     });
@@ -153,6 +204,23 @@ const modeloAirMax = () => {
                     console.log(carrito);
                     carritoCounter();
                     saveLocal();
+
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'bottom-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      
+                      Toast.fire({
+                        icon: 'success',
+                        title: 'Producto agregado al carrito.'
+                      })
             });
         };
     });

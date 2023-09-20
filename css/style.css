@@ -39,6 +39,10 @@ img{
     color: var(--clr-main);
 }
 
+.navbar-titulo:hover{
+    color: var(--clr-main);
+}
+
 .nav-link:hover{
     color: var(--clr-main);
 }
@@ -52,6 +56,9 @@ img{
 .section-productos-titulo{
     text-align: center;
     color: var(--clr-main2);
+    border-bottom: #e2e2e2 solid 0.2rem;
+    width: fit-content;
+    margin: auto;
 }
 
 .container-productos{
@@ -96,7 +103,7 @@ img{
 }
 
 .producto-comprar:hover{
-    background-color: #f7f7f7;
+    background-color: rgb(184, 183, 183);
 }
 
 /* -------- MODAL ----------*/
@@ -178,19 +185,21 @@ img{
 
 .totalContentTexto{
     margin: auto 0;
+    border-bottom: rgb(182, 182, 182) solid 0.1rem;
 }
 
 .totalContentComprar{
     margin: 0;
-    padding: 7px 10px;
+    padding: 8px 25px;
     background-color: rgb(32, 156, 32);;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 
 .totalContentComprar:hover{
-    background-color: rgb(29, 129, 29);;
+    background-color: rgb(29, 119, 29);;
 }
 
 /* ------------ FOOTER -------------*/

@@ -67,6 +67,7 @@ const pintarCarrito = () => {
             Swal.fire(
                 'El carrito está vacío',
                 'Seguir viendo productos.',
+                'warning',
             )
         }
     })
@@ -76,10 +77,14 @@ const pintarCarrito = () => {
 verCarrito.addEventListener("click", pintarCarrito);
 
 const eliminarProducto = (productId) => {
-    carrito = carrito.filter((producto) => producto.id !== productId);
-    carritoCounter();
-    saveLocal();
-    pintarCarrito();
+    const index = carrito.findIndex((producto) => producto.id === productId);
+
+    if (index !== -1) {
+        carrito.splice(index, 1);
+        carritoCounter();
+        saveLocal();
+        pintarCarrito();
+    }
 };
 
 const carritoCounter = () => {
