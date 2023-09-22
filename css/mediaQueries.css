@@ -1,0 +1,83 @@
+/* -------- MEDIA QUERIES ------------- */
+
+@media (max-width: 1380px) {
+    .container-productos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+@media (max-width: 1076px) {
+    .container-productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .cantidad-carrito{
+        top: 237px;
+        left: 58px;
+    }
+
+    .footer-subtitle{
+        text-align: center;
+    }
+
+    .footer-texto{
+        text-align: center;
+    }
+
+    .footer-texto-gracias{
+        text-align: center;
+    }
+
+    .container-footer{
+        margin-bottom: 1.3rem;
+    }
+} 
+
+@media (max-width: 730px) {
+    .container-productos{
+        grid-template-columns: 1fr;
+    }
+
+    .container-productos{
+        margin: 0;
+    }
+
+
+    /* MEDIA QUERIES MODAL */
+
+    .modal{
+        width: 90%;
+        margin: auto 5%;
+        
+    }
+
+    .modal > .modalContent {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+        border-bottom: solid rgb(212, 212, 212) 1px;
+    }
+
+    .modalContent-precio{
+        margin: 5px;
+    }
+    
+    .eliminar{
+        margin-bottom: 3px;
+        font-size: 1.7rem;
+    }
+    
+    .modal > div > img {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .totalContent{
+        background: rgb(209, 209, 209);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+} 
