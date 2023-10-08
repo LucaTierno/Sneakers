@@ -1,0 +1,2 @@
+Sneakers
+Sneakers fue mi proyecto final en mi aprendizaje en el curso de JavaScript en CoderHpuse, en este proyecto aplique todos los conocimientos que aprendi en este curso. Las tecnologias que se aplicaron fueron: JavaScipt, HTML, CSS, BOOTSTRAP y un archivo JSON para hacer una simulacion de una base de datos y poder recorrer los productos. Tambien el proyecto se adapta a cualquier dispositivo y con un codigo ordenado y comentado para que se haga mas facil la lectura y el entendimiento del mismo.
